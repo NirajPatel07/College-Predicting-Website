@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>College Match | Engineering</title>
+
+<link rel="stylesheet" href="engstyle.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+
+<script>
+function populate(s1,s2){
+	var s1 = document.getElementById(s1);
+	var s2 = document.getElementById(s2);
+	s2.innerHTML = "";
+	if(s1.value == "Maharashtra"){
+		var optionArray = ["|","Mumbai|Mumbai","Pune|Pune","SavitribaiPhule|SavitribaiPhule"];
+	} else if(s1.value == "Delhi"){
+		var optionArray = ["|","University of Delhi|University of delhi"];
+	} else if(s1.value == "Uttar Pradesh"){
+		var optionArray = ["|","IIT Kanpur|IIT Kanpur"];
+	}
+	for(var option in optionArray){
+		var pair = optionArray[option].split("|");
+		var newOption = document.createElement("option");
+		newOption.value = pair[0];
+		newOption.innerHTML = pair[1];
+		s2.options.add(newOption);
+	}
+}
+
+
+</script>
+
+</head>
+
+
+<body>
+
+<header>
+<div class="container">
+	<div id="branding">
+	<h1>College <span class="highlight">Match</span></h1>	
+	</div>
+<nav>
+<ul>
+<li ><a href="index.html">Home</a></li>
+<li class="current"><a href="engineering.html">Engineering</a></li>
+<li><a href="http://bookipedia.freesite.vip/Home.html" target="_blank">Book Store</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<div class="form-style-5">
+ <form action="/action_page.php">
+
+<div class="signin">
+<div class="state">
+<label for="slct1">State</label>
+<select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+  <option value=""></option>
+  <option value="Maharashtra">Maharashtra</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Uttar Pradesh">Uttar Pradesh</option>
+</select>
+</div>
+
+<div class="university">
+<label for="slct2">University</label>
+<select id="slct2" name="slct2"></select>
+</div>
+
+
+<label for="country">Caste</label>
+    <select id="country" name="country">
+      <option value="australia">OPEN</option>
+      <option value="canada">ST</option>
+      <option value="usa">OBC</option>
+	  <option value="usa">SC</option>
+    </select>
+	
+	<label for="country">Round</label>
+    <select id="country" name="country">
+      <option value="australia" id="t1">CAP - Round 1</option>
+      <option value="canada" id="t2">CAP - Round 2</option>
+      <option value="usa" id="t3">CAP - Round 3</option>
+    </select>
+
+    <label for="country">Course</label>
+    <select id="country" name="country">
+      <option value="australia">IT</option>
+      <option value="canada">COMPS</option>
+      <option value="usa">MECH</option>
+	  <option value="usa">CIVIL</option>
+    </select>
+	
+	<label for="fname">Marks</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter Marks...">
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+
+<div class="clginfo">
+<h2>Colleges In Mumbai</h2>
+</div>
+
+<section id="boxes">
+<div class="container">
+<div class="box">
+<h1>Veermata Jijabai Technological Institute</h1>
+<img src="./img/vjti.png">
+<p>Accepted Exams:JEE Main, MHT CET </p>
+<p>Phone: 022 2419 8101</p>
+</div>
+<div class="box">
+<h1>K. J. Somaiya College of Engineering</h1>
+<img src="./img/kj.jpeg">
+<p>Accepted Exams: JEE Main, MHT CET </p>
+<p>Phone: 022 6644 9191</p>
+</div>
+<div class="box">
+<h1>Thadomal Shahani Engineering College</h1>
+<img src="./img/ts.jpeg">
+<p>Accepted Exams: JEE Main, MHT CET</p>
+<p>Phone: 022 2649 5808</p>
+</div>
+<div class="box">
+<h1>Bhartiya Vidya Bhavan’s Sardar Patel Institute of Technology</h1>
+<img src="./img/bhavan.png">
+<p>Accepted Exams: JEE Main, MHT CET</p>
+<p>Phone: 022 2670 7440</p>
+</div>
+<div class="box">
+<h1>Atharva College of Engineering</h1>
+<img src="./img/atharva.png">
+<p>Accepted Exams: JEE Main, MHT CET</p>
+<p>Phone: 022 4029 4949</p>
+</div>
+<div class="box">
+<h1>Manjara Charitable Trust’s Rajiv Gandhi Institute of Technology</h1>
+<img src="./img/rajiv.jpg">
+<p>Accepted Exams: JEE Main, MHT CET</p>
+<p>Phone: 022 2670 9820</p>
+</div>
+</div>
+</section>
+
+
+
+
+<footer>
+<p>College Match, Copyright &copy; 2020</p>
+</footer>
+
+
+
+<script>
+var today = new Date();
+if(document.getElementById('2020-07-08') < today.getDate())
+{
+document.getElementById("t1").disabled = true;
+}
+else{ 
+document.getElementById("t1").disabled = false;
+};
+
+var today = new Date();
+if(document.getElementById('2020-07-22') < today.getDate())
+{
+document.getElementById("t2").disabled = true;
+}
+else{ 
+document.getElementById("t2").disabled = false;
+};
+
+var today = new Date();
+if(document.getElementById('2020-08-07') < today.getDate())
+{
+document.getElementById("t3").disabled = true;
+}
+else{ 
+document.getElementById("t3").disabled = false;
+};
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
