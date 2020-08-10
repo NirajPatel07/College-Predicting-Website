@@ -1,0 +1,285 @@
+body{
+font: 15px/1.5 Arial, Helvetica, sans-serif;
+padding:0;
+margin:0;
+background-color:#f4f4f4;
+}
+
+.container{
+width:80%;
+margin:auto;
+overflow:hidden;
+}
+
+header{
+background:#35424a;
+color:white;
+padding-top:30px;
+min-height:70px;
+border-bottom:#66b3ff 4px solid;
+}
+
+header a{
+color:white;
+text-decoration:none;
+text-transform: uppercase;
+font-size:16px;
+}
+
+header ul{
+margin:0;
+padding:0;
+}
+
+header li{
+float:left;
+display:inline;
+padding:0 20px 0 20px;
+}
+
+header #branding{
+float:left;
+}
+
+header #branding h1{
+margin:0;
+}
+
+header nav{
+float:right;
+margin-top:10px;
+}
+
+header .highlight, header .current a{
+color:#66b3ff;
+font-weight:bold;
+}
+
+header a:hover{
+color:#66b3ff;
+font-weight:bold;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #66b3ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signin label{
+font-size:30px;
+font-weight:bold;
+}
+
+
+
+.state label{
+font-size:30px;
+font-weight:bold;
+}
+
+.university label{
+font-size:30px;
+font-weight:bold;
+}
+
+.signin {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input{
+font-size:20px;
+font-weight:bold;
+}
+
+.glow{
+color:#ff4d4d;
+}
+
+select{
+font-weight:bold;
+font-size:15px;
+}
+
+
+.clginfo{
+background:#35424a;
+color:white;
+text-align:center;
+padding-top:10px;
+min-height:60px;
+border-top:#66b3ff 4px solid;
+border-bottom:#66b3ff 4px solid;
+}
+
+#boxes{
+margin-top:20px;
+}
+
+
+#boxes .box{
+float:left;
+width:30%;
+padding:10px;
+text-align:center;
+}
+
+#boxes .box img{
+width:200px;
+height:200px;
+}
+
+footer{
+text-align:center;
+padding:15px;
+background-color:#35424a;
+color:white;
+font-size:20px;
+}
+
+
+
+/*......*/
+
+.form-style-5{
+	
+	max-width: 600px;
+	padding: 10px 20px;
+    background:url(./img/bgg.jpg);
+	margin: 10px auto;
+	padding: 20px;
+	
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+	border: none;
+}
+.form-style-5 legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.form-style-5 label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+	background: #d2d9dd;
+}
+.form-style-5 select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.form-style-5 .number {
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+	background: #109177;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

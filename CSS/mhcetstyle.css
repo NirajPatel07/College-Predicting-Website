@@ -1,0 +1,146 @@
+body{
+font: 15px/1.5 Arial, Helvetica, sans-serif;
+padding:0;
+margin:0;
+background-color:#f4f4f4;
+}
+
+.container{
+width:80%;
+margin:auto;
+overflow:hidden;
+}
+
+header{
+background:#35424a;
+color:white;
+padding-top:30px;
+min-height:70px;
+border-bottom:#66b3ff 4px solid;
+}
+
+header a{
+color:white;
+text-decoration:none;
+text-transform: uppercase;
+font-size:16px;
+}
+
+header ul{
+margin:0;
+padding:0;
+}
+
+header li{
+float:left;
+display:inline;
+padding:0 20px 0 20px;
+}
+
+header #branding{
+float:left;
+}
+
+header #branding h1{
+margin:0;
+}
+
+header nav{
+float:right;
+margin-top:10px;
+}
+
+header .highlight, header .current a{
+color:#66b3ff;
+font-weight:bold;
+}
+
+header a:hover{
+color:#66b3ff;
+font-weight:bold;
+}
+
+
+
+#searchbar{
+padding:15px;
+color:#ffffff;
+background:#35424a;
+}
+
+#searchbar h1{
+float:left;
+} 
+
+#searchbar form{
+float:right;
+margin-top:15px;
+}
+
+#searchbar input{
+padding:5px;
+height:25px;
+width:400px;
+}
+
+.button_1{
+height:40px;
+width:90px;
+background:#66b3ff;
+border:none;
+}
+
+
+.info{
+text-align:center;
+border-bottom:#66b3ff 4px solid;
+border-top:#66b3ff 4px solid;
+}
+
+.info p{
+font-size:17px;
+}
+
+.jeeinfo{
+text-align:center;
+border-bottom:#66b3ff 4px solid;
+border-top:#35424a 4px solid;
+}
+
+.jeeinfo{
+font-size:17px;
+}
+
+
+footer{
+text-align:center;
+padding:15px;
+background-color:#35424a;
+color:white;
+font-size:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
